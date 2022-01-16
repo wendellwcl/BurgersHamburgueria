@@ -4,14 +4,25 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
+body{
+    background-color: #12100E;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
 .container{
     padding: 0 10%;
 }
 
-body{
-    background-color: #12100E;
+.titulo{
+    font-size: 35px;
+    color: #FFF;
+    margin: 30px 0;
+    display: block;
+    width: 100%;
+    text-align: center;
 }
-
 
 
 /* Header
@@ -79,5 +90,68 @@ header{
 
 
 
-/* Capa
+/* Main / Capa
 ---------------------------------------------------------------------------------------------------*/
+
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+main > img{
+    max-width: 100%;
+    max-height: 578px;
+    object-fit: contain;
+}
+
+
+
+/* Cardápio
+---------------------------------------------------------------------------------------------------*/
+#cardapio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+/* Itens Cardápio
+------------------------------------------------*/
+.item-cardapio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 10px;
+    width: 300px;
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.item-cardapio > img{
+    width: 300px;
+    border: 3px solid #B09165;
+    border-radius: 15px;
+    margin-bottom: 10px
+}
+
+.nome{
+    color: #FFF;
+}
+
+.preco{
+    color: #B09165;
+}
+
+
+
+/* Parallax
+---------------------------------------------------------------------------------------------------*/
+#parallax{
+    height: 350px;
+    background: url(../img/bg.png) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
