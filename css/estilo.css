@@ -9,6 +9,7 @@
 body{
     background-color: #12100E;
     font-family: 'Source Sans Pro', sans-serif;
+    overflow-x: hidden;
 }
 
 .container{
@@ -100,7 +101,7 @@ main{
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    padding-top: 90px;
 }
 
 main > img{
@@ -256,3 +257,47 @@ main > img{
 
 /* Rodapé
 ---------------------------------------------------------------------------------------------------*/
+
+footer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: baseline;
+    background-color: rgba(255, 255, 255, .1);
+    color: #FFF;
+}
+
+footer > div{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* Infos
+------------------------------------------------*/
+#infos > div{
+    padding: 10px;
+}
+
+/* Sociais
+------------------------------------------------*/
+#sociais > a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 21px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+
+
+/* media queries
+---------------------------------------------------------------------------------------------------*/
+
+@media(max-width: 750px){
+    
+    footer{
+        grid-template-columns: 1fr;
+    }
+
+}
