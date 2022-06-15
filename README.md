@@ -1,1 +1,2 @@
-Projeto de página comercial de uma hamburgueria.
+Página comercial de uma hamburgueria.
+(projeto fictício)
